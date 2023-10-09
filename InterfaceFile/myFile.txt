@@ -1,0 +1,2 @@
+This is a sample file to run the Program
+To run the code use command: go run main.go myfile.txt
