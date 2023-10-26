@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"sync"
+	"time"
 )
 
 func usingMutChan() {
@@ -26,9 +27,12 @@ func usingChan() {
 	ordr := 0
 	ch := make(chan int, 10)
 	go func(n int, ch chan int) {
+
 		for i := 0; i < n; i++ {
+			time.Sleep(2 * time.Second)
 			ch <- i
 		}
+		close(ch)
 	}(cap(ch), ch)
 	for c := range ch {
 		fmt.Printf("Go Routine number:%d Order number:%d\n", c, ordr)
@@ -37,5 +41,6 @@ func usingChan() {
 }
 func main() {
 	usingMutChan()
+	fmt.Println()
 	usingChan()
 }
