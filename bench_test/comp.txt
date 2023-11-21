@@ -1,0 +1,12 @@
+goos: linux
+goarch: amd64
+pkg: benchmark
+cpu: AMD Ryzen 5 7530U with Radeon Graphics         
+                                  │   new.txt    │                old.txt                 │
+                                  │    sec/op    │    sec/op      vs base                 │
+VariousPrime/input_range=100-12     481.8n ± ∞ ¹   1196.0n ± ∞ ¹   +148.24% (p=0.008 n=5)
+VariousPrime/input_range=1000-12    3.094µ ± ∞ ¹   17.627µ ± ∞ ¹   +469.72% (p=0.008 n=5)
+VariousPrime/input_range=4000-12    11.88µ ± ∞ ¹    93.95µ ± ∞ ¹   +690.67% (p=0.008 n=5)
+VariousPrime/input_range=20000-12   61.43µ ± ∞ ¹   737.79µ ± ∞ ¹  +1101.06% (p=0.008 n=5)
+geomean                             5.743µ          34.77µ         +505.37%
+¹ need >= 6 samples for confidence interval at level 0.95

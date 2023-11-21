@@ -1,0 +1,26 @@
+goos: linux
+goarch: amd64
+pkg: benchmark
+cpu: AMD Ryzen 5 7530U with Radeon Graphics         
+BenchmarkVariousPrime/input_range=100-12         	 1000000	      1196 ns/op
+BenchmarkVariousPrime/input_range=100-12         	  989373	      1304 ns/op
+BenchmarkVariousPrime/input_range=100-12         	 1000000	      1272 ns/op
+BenchmarkVariousPrime/input_range=100-12         	 1086777	       979.2 ns/op
+BenchmarkVariousPrime/input_range=100-12         	 1361409	       892.2 ns/op
+BenchmarkVariousPrime/input_range=1000-12        	   73390	     16507 ns/op
+BenchmarkVariousPrime/input_range=1000-12        	   74965	     17537 ns/op
+BenchmarkVariousPrime/input_range=1000-12        	   69098	     18534 ns/op
+BenchmarkVariousPrime/input_range=1000-12        	   65235	     17627 ns/op
+BenchmarkVariousPrime/input_range=1000-12        	   80888	     17742 ns/op
+BenchmarkVariousPrime/input_range=4000-12        	   13543	    102232 ns/op
+BenchmarkVariousPrime/input_range=4000-12        	   12618	     91428 ns/op
+BenchmarkVariousPrime/input_range=4000-12        	   13249	     88261 ns/op
+BenchmarkVariousPrime/input_range=4000-12        	   12711	     93948 ns/op
+BenchmarkVariousPrime/input_range=4000-12        	   13309	    102979 ns/op
+BenchmarkVariousPrime/input_range=20000-12       	    1568	    737789 ns/op
+BenchmarkVariousPrime/input_range=20000-12       	    1712	    745502 ns/op
+BenchmarkVariousPrime/input_range=20000-12       	    1774	    755090 ns/op
+BenchmarkVariousPrime/input_range=20000-12       	    1632	    714136 ns/op
+BenchmarkVariousPrime/input_range=20000-12       	    1760	    726675 ns/op
+PASS
+ok  	benchmark	33.297s
